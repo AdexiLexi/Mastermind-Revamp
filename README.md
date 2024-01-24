@@ -31,6 +31,7 @@ A link to a video of all of this being performed is a available [here](https://w
 ![4-digit-7-segment-LED-display-pinout-300x207](https://github.com/AdexiLexi/Mastermind-Revamp/assets/122487834/b30f4c85-d2bc-48e6-9600-6c0bf6cada04)
 
 * Arduino pin # (X) connects to 7-Seg Pin # (Y)
+* Note that decimal will be the ONLY pin on the 7-Segment Display not connected. This is because we do not use it for this project.
 
 | Arduino Pin # | 7-Seg Pin # (See Above) |
 | ------------- |:-----------------------:|
@@ -57,6 +58,10 @@ A link to a video of all of this being performed is a available [here](https://w
 | 3             | SW             |
 
 * Passive buzzer (+) connectes to 100 ohm resistor and to power (5V on Arduino Board or Breadboard) negative end goes to GND (ground, or negative strip on breadboard)
+
+![image0 (1)](https://github.com/AdexiLexi/Mastermind-Revamp/assets/122487834/4234bb20-7339-4153-8607-9ed7af12d4c1)
+
+![Uploading image1.jpeg…]()
 
 ### Executing program
 
