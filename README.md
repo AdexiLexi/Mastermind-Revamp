@@ -26,6 +26,38 @@ A link to a video of all of this being performed is a available [here](https://w
 * Main file can be found under ```MastermindMain.ino``` as well as the files for sound (for the buzzer) under ```RickSoundFiles.h``` and for timing of the files, used in place of the ```delay()``` function to allow for different functionability simultaneously across the system, found under ```Timer.h```.
 * Upload these files to Arduino - this project was created/runs successfully on Arduino 1.8.16, however any later versions of Arduino *should* also work just fine
 
+### Wiring
+
+![4-digit-7-segment-LED-display-pinout-300x207](https://github.com/AdexiLexi/Mastermind-Revamp/assets/122487834/b30f4c85-d2bc-48e6-9600-6c0bf6cada04)
+
+* Arduino pin # (X) connects to 7-Seg Pin # (Y)
+
+| Arduino Pin # | 7-Seg Pin # (See Above) |
+| ------------- |:-----------------------:|
+| 6             | E                       |
+| 7             | D                       |
+| 8             | C                       |
+| 9             | G                       |
+| 10            | A                       |
+| 11            | F                       |
+| 12            | B                       |
+| A0            | D4                      |
+| A1            | D3                      |
+| A2            | D2                      |
+| A3            | D1                      |
+
+* Arduino pin # (X) connects to JoyStick Pin # (Y)
+
+| Arduino Pin # | JoyStick Pin # |
+| ------------- |:--------------:|
+| GND           | GND            |
+| 5V            | 5V             |
+| A4            | VRx            |
+| A5            | VRy            |
+| 3             | SW             |
+
+* Passive buzzer (+) connectes to 100 ohm resistor and to power (5V on Arduino Board or Breadboard) negative end goes to GND (ground, or negative strip on breadboard)
+
 ### Executing program
 
 * After making sure all your hardware is correctly wired up to the bedboard and Arduino (if you have issues getting the code to work as intended, chances are the issue(s) lie here) click the upload button to the upper left of the Arduino software interface (or hit ```Ctrl U```)
