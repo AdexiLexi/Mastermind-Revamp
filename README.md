@@ -4,19 +4,27 @@ A single player spin on the the 2-playerboard game Mastermind with a surprise mu
 
 ## Description
 
-An in-depth paragraph about your project and overview of use.
+Using the Arduino Uno as well as some jumper wires and additional components, I have created a hardware based minigame based off of a board game I played growing up. The gist of the game is that it is a guessing game, where each guess wins you some type of hit(s) to try and push you closer to a 4-color combo key. For this version of the game, I did not design it like that, however it does more or less follow the same idea, just with an infinite number of guesses and numbers instead of colors. Using an analog joystick, the user can change the x-values (shifting left or right) to switch between any of the 4-digit place holders on a 4-digit 7-segment display. To actually change the values, they can change the y-values (up or down). Upon reaching the highest number 9, pressing up will wrap back around to 0, and trying to go below zero will jump you to 9, etc..
+
+To submit your guess, you press the joystick button (pressing the joystick inward does this). You could also wire it to be an actual external button, but current implementation is via the joy. At this point, 4 pitches will ring out from the passive buzzer. High pitch indecates correct digit in correct place, where a low pitch means that is not the correct number. 
+
+EX: If the answer code is 1-2-3-4 and user's input is 1-2-5-6, user will hear a high-high-low-low series of pitches. 
+
+Every time you input the full correct combination, a victory song will play from the buzzer. There is currently only one song. However, after every round where the correct code is inputted, the code will change and you have the oppurtunity to guess over and over again.
+
+A link to a video of all of this being performed is a available [here](https://www.youtube.com/watch?v=ptimEnspqRY)
 
 ## Getting Started
 
 ### Dependencies
 
-*Windows 10
-*Arduino Version 1.8.16
+* Windows 10
+* Arduino Version 1.8.16
 
 ### Installing
 
 * Main file can be found under ```MastermindMain.ino``` as well as the files for sound (for the buzzer) under ```RickSoundFiles.h``` and for timing of the files, used in place of the ```delay()``` function to allow for different functionability simultaneously across the system, found under ```Timer.h```.
-* Any modifications needed to be made to files/folders
+* Upload these files to Arduino - this project was created/runs successfully on Arduino 1.8.16, however any later versions of Arduino *should* also work just fine
 
 ### Executing program
 
@@ -28,37 +36,14 @@ avrdude: ser_open(): can't open device "\\.\COM9": The system cannot find the fi
 code blocks for commands
 ```
 
-## Help
-
-Any advise for common problems or issues.
-```
-command to run if program contains helper info
-```
-
 ## Authors
 
-Contributors names and contact info
-
-ex. Dominique Pizzie  
-ex. [@DomPizzie](https://twitter.com/dompizzie)
+Alexis Stephens  
 
 ## Version History
 
 * 0.2
-    * Various bug fixes and optimizations
+    * Updated README file to include instructs/functional video
     * See [commit change]() or See [release history]()
 * 0.1
     * Initial Release
-
-## License
-
-This project is licensed under the [NAME HERE] License - see the LICENSE.md file for details
-
-## Acknowledgments
-
-Inspiration, code snippets, etc.
-* [awesome-readme](https://github.com/matiassingers/awesome-readme)
-* [PurpleBooth](https://gist.github.com/PurpleBooth/109311bb0361f32d87a2)
-* [dbader](https://github.com/dbader/readme-template)
-* [zenorocha](https://gist.github.com/zenorocha/4526327)
-* [fvcproductions](https://gist.github.com/fvcproductions/1bfc2d4aecb01a834b46)
