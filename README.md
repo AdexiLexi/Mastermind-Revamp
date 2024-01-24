@@ -1,4 +1,4 @@
-# Mastermind-Revamp
+## Mastermind-Revamp
 
 A single player spin on the the 2-playerboard game Mastermind with a surprise musical ending. Is implemented using arduino hardware and software, designed to be physically interactived with by the user.
 
@@ -61,17 +61,15 @@ A link to a video of all of this being performed is a available [here](https://w
 
 ![image0 (1)](https://github.com/AdexiLexi/Mastermind-Revamp/assets/122487834/4234bb20-7339-4153-8607-9ed7af12d4c1)
 
-![Uploading image1.jpeg…]()
+(Better wiring picture to be added hopefully soon)
+
+![image1](https://github.com/AdexiLexi/Mastermind-Revamp/assets/122487834/58412b9c-c7d5-41df-9ea5-0b3409ab104d)
 
 ### Executing program
 
 * After making sure all your hardware is correctly wired up to the bedboard and Arduino (if you have issues getting the code to work as intended, chances are the issue(s) lie here) click the upload button to the upper left of the Arduino software interface (or hit ```Ctrl U```)
 * If you recieve the error code ```An error occurred while uploading the sketch
 avrdude: ser_open(): can't open device "\\.\COM9": The system cannot find the file specified``` you either have not plugged in the USB 2.0 Cable Type A/B to your board and computer, or (more likely) you have not set output to the correct port. Check under Tools in th eupper left to fix this. 
-* Step-by-step bullets
-```
-code blocks for commands
-```
 
 ## Authors
 
