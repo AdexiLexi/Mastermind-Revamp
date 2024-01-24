@@ -24,7 +24,9 @@ A link to a video of all of this being performed is a available [here](https://w
 ### Installing
 
 * Main file can be found under ```MastermindMain.ino``` as well as the files for sound (for the buzzer) under ```RickSoundFiles.h``` and for timing of the files, used in place of the ```delay()``` function to allow for different functionability simultaneously across the system, found under ```Timer.h```.
-* Upload these files to Arduino - this project was created/runs successfully on Arduino 1.8.16, however any later versions of Arduino *should* also work just fine
+* Download these files as is. MastermindMain should be an Arduino file, and other 2 a .h
+* Open the Arduino software, go to file, and hit ```Open...``` or ```Ctrl O```. Click on the MastermindMain file. It will request to move to a new file, hit yes, and then you need to find the file on your computer and manually drag and drop ```Timer.h``` and ```RickSoundFiles.h``` into this file. Once you have done this, you should be able to click on the file in the Arduino software (Open...) and all three files should be available in the same window
+* This project was created/runs successfully on Arduino 1.8.16, however any later versions of Arduino *should* also work just fine
 
 ### Wiring
 
