@@ -63,7 +63,8 @@ A link to a video of all of this being performed is a available [here](https://w
 
 (Better wiring picture to be added hopefully soon)
 
-![image1](https://github.com/AdexiLexi/Mastermind-Revamp/assets/122487834/58412b9c-c7d5-41df-9ea5-0b3409ab104d)
+![image0 (2)](https://github.com/AdexiLexi/Mastermind-Revamp/assets/122487834/1a3bda21-1ed0-409b-951f-b7cfff7ef890)
+
 
 ### Executing program
 
